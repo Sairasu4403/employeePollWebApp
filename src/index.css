@@ -1,0 +1,38 @@
+/* Make room for the fixed navbar */
+body {
+  padding-top: 72px; /* navbar height */
+  background: #f6f7fb; /* soft light background so cards/tables pop */
+  color: #212529;
+}
+
+/* App wrapper */
+.app-shell {
+  min-height: 100vh;
+}
+
+/* Optional: center content and keep spacing consistent */
+.page-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* Keep your existing styles if you want */
+.NavLink {
+  transition: all 0.3s ease;
+}
+
+.NavLink.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.dropdown-menu[data-bs-popper] {
+  position: absolute !important;
+  width: 110px !important;
+  left: -110px !important;
+}
+
+button#uncontrolled-tab-example-tab-newQuestions,
+button#uncontrolled-tab-example-tab-done {
+  font-size: 1.05rem; /* 1.7rem is too large for light UI */
+}
